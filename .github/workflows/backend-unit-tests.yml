@@ -33,9 +33,6 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
-        with:
-          # Must match backend/Dockerfile's UV_IMAGE tag; pinned by backend/tests/test_ci_uv_version_pin.py
-          version: "0.11.1"
 
       - name: Install backend dependencies (documented default)
         working-directory: backend
@@ -79,9 +76,6 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
-        with:
-          # Must match backend/Dockerfile's UV_IMAGE tag; pinned by backend/tests/test_ci_uv_version_pin.py
-          version: "0.11.1"
 
       - name: Install backend dependencies
         working-directory: backend
